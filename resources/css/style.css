@@ -36,10 +36,7 @@ nav {
     position: absolute;
     top: 18px;
     right: 24px;
-}
-
-nav li {
-    display: inline;
+    display: inline-flex;
 }
 
 nav a {
@@ -58,4 +55,3 @@ nav span {
 nav strong {
     color:black;
 }
-
