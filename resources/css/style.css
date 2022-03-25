@@ -15,6 +15,17 @@ body {
 a {
     text-decoration: none;
 }
+
+h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+p {
+    line-height: 24px;
+}
   
 /* Header */
 
@@ -68,7 +79,7 @@ nav strong {
 
 .flex-content .main-content {
     width: 60%;
-    padding: 32px 24px;
+    padding: 2rem 1.5rem;
     border-right: 1px solid rgb(226, 216, 216);
 }
 
@@ -76,14 +87,17 @@ nav strong {
     display: flex;
     flex-direction: column;
     width: 40%;
-    padding: 80px 100px 50px 32px;
+    padding: 10rem 8rem 6rem 2rem ;
+    height: auto;
 }
 
-h2 {
+
+.supporting-content h2 {
     font-weight: bold;
     font-size: 2rem;
     line-height: 40px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 #banner p {
@@ -100,4 +114,52 @@ h2 {
     color: white;
 }
 
+/* Information section */
+.content-image-box {
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    height: auto;
+}
 
+.content-image-box:first-child {
+    padding-top: 0;
+}
+
+.content-image-box:last-child {
+    border-bottom: none;
+}
+
+.content-image-box .media-container {
+    width: 35%;
+    height: auto;
+}
+
+.content-image-box .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 0.75rem 0 1rem;
+}
+
+#supporting-content-information {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+}
+
+.content-image-box h4 {
+    margin: 0;
+}
+
+.content-image-box p {
+    font-size: 0.8rem;
+}
+
+.content-image-box a {
+    font-size: 0.8rem;
+}
