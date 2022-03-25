@@ -3,13 +3,17 @@
 body {
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    color: #303030;
+    color: rgb(92, 90, 90);
     font-size: 16px;
     line-height: 0;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
 }
   
 /* Header */
@@ -55,3 +59,52 @@ nav span {
 nav strong {
     color:black;
 }
+
+/* Banner section */
+#banner {
+    background-color: rgb(226, 216, 216);
+}
+
+.flex-content {
+    display: flex;
+}
+
+.flex-content .main-content {
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 1px solid rgb(226, 216, 216);
+}
+
+.flex-content .supporting-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 32px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    height: auto;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+#banner p {
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.button {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+    background-color: rgb(92, 90, 90);
+    color: white;
+}
+
+
