@@ -143,6 +143,23 @@ header .mobile ul {
     width: 70%;
 }
 
+@media only screen and (max-width: 550px) {
+    #banner {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #banner .main-content {
+        width:auto;
+        padding: 0;
+    }
+
+    #banner .supporting-content {
+        padding: 2rem 1rem;
+        width: auto;
+    }
+}
+
 /* Information section */
 
 .content-image-box {
