@@ -26,15 +26,16 @@ h2 {
 p {
     line-height: 1.5rem;
 }
+
+li {
+    list-style: none;
+}
   
 /* Header */
 
 header {
     width: 100%;
-}
-
-nav {
-    height: 64px;
+    height: 4rem;
 }
 
 .header-left {
@@ -44,7 +45,6 @@ nav {
 }
 
 .header-right {
-    list-style: none;
     position: absolute;
     top: 18px;
     right: 24px;
@@ -66,6 +66,29 @@ nav span {
 
 nav strong {
     color:black;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+
+header .desktop {
+    display: none;
+}
+
+header .mobile {
+    display: block;
+    width: 100%;
+}
+
+header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+}
 }
 
 /* Banner section */
@@ -250,10 +273,10 @@ footer {
 }
 
 footer .copyright {
-    position:absolute;
+    position: absolute;
     left: 1.5rem;
-    
 }
+
 footer a {
     color: rgb(90, 90, 90);
     float: right;
@@ -262,5 +285,5 @@ footer a {
 }
 
 footer .first-child {
-    padding-right: 0px;
+    padding-right: 0;
 }
