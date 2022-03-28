@@ -170,7 +170,7 @@ header .mobile ul {
 }
 
 .content-image-box:first-child {
-    padding-top: 0;
+    padding-top: 0rem;
 }
 
 .content-image-box:last-child {
@@ -213,10 +213,30 @@ header .mobile ul {
     font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 550px) {
+
+    #information-section .main-content {
+        display: none;
+    }
+
+    #supporting-content-information {
+        width: auto;
+        border-bottom: 1px solid rgb(245, 245, 245);
+    }
+
+    #supporting-content-information .content-image-box {
+        width: auto;
+    }
+    
+    #supporting-content-information .content-image-box:last-child {
+        padding-bottom: 0;
+    }
+}
+
 /* Courses section */
 
 #courses-section {
-    padding: 2rem 3.5rem;
+    padding: 0rem 3.5rem;
     background-color: rgb(245, 245, 245);
 }
 
@@ -249,6 +269,34 @@ header .mobile ul {
 
 .course h4 {
     font-weight: lighter;
+}
+
+@media only screen and (max-width: 550px) {
+    #courses-section {
+        background-color: white;
+        padding: 2rem 0rem 1.5rem 0rem;
+        border-bottom: 1px solid rgb(245, 245, 245);
+    }
+    .course .media-container,
+    .course h4,
+    .course p {
+        display: none;
+    }
+
+    .courses-row {
+        flex-direction: column;
+    }
+
+    .course .text-content {
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        height: auto;
+    }
+
+    .course h3 {
+        margin: 0rem 0rem;
+    }
 }
 
 /* Thesis section */
